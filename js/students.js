@@ -39,12 +39,12 @@ const students = [
 //creo una lista di studenti che hanno voti superiori a 70
 const gradesAbove70 = students.filter(({grades}) => grades > 70);
 
-logSomething(gradesAbove70);
+// logSomething(gradesAbove70);
 
 const gradesAbove70AndIDAbove120 = gradesAbove70.filter(({id}) => id > 120);
 
-logSomething(gradesAbove70AndIDAbove120);
+// logSomething(gradesAbove70AndIDAbove120);
 
 const studentsNames = students.map(({name}) => name.toUpperCase());
 
-logSomething(studentsNames);
+// logSomething(studentsNames);
