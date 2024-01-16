@@ -1,6 +1,7 @@
 Ciao ragazzi,
 esercizio di oggi: Snack Array Methods
 nome repo: js-snack-es6
+
 SNACK 1
 Il Grande Gatsby ci ha chiesto di creare i segnaposto per il tavolo degli invitati alla sua mega festa vip.
 Ci ha lasciato il nome del tavolo  e la lista degli invitati in ordine di posto.
@@ -20,6 +21,7 @@ const guests = [
 ];
 Per stampare il tutto,  la tipografia  vuole che le mandiamo una lista di ospiti in cui ogni ospite sia un oggetto javascript che ha come attributi: nome del tavolo, nome dell'ospite e posto occupato.
 Generiamo questo array in una variabile guestsList e stampiamolo in console
+
 SNACK 2
 Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
 Per preparare l'aula di un nuovo corso, dobbiamo svolgere una serie di operazioni
