@@ -2,7 +2,6 @@ const logSomething = something => console.log(something);
 
 //prendo gli elementi che mi servono
 
-const table = document.querySelector('.table');
 const seatContainer = document.querySelector('.seats')
 
 const tableName = 'Tavolo Vip';
@@ -41,10 +40,13 @@ const createGuestList = (guest, i) => {
 const createTemplate = guest => {
     
     template = `
-    <div class="seat">
-        <img src="images/${guest.image}" alt="" class="vip-image">
-        <div class="vip-name">${guest.name}</div>
-        <div class="seat-number">${guest.seatOccupied}</div>
+    <div class="col">
+        <div class="seat">
+            <img src="images/${guest.image}" alt="" class="vip-image">
+            <div class="vip-name">${guest.name}</div>
+            <div class="seat-number">Posto: ${guest.seatOccupied}</div>
+            <div class="table">Al ${guest.tableName}</div>
+        </div>
     </div>
     `
 
@@ -59,7 +61,7 @@ logSomething(guestsLists);
 //continuo stampando in pagina
 
 //do al tavolo il suo nome
-table.innerText = tableName;
+
 
 //creo tanti posti quanti gli ospiti
 guestsLists.forEach(createTemplate);
