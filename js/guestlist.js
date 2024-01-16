@@ -17,17 +17,16 @@ const guests = [
   ];
 
 
-guests.forEach((guest, i) => {
+const createGuestList = (guest, i) => {
     newVip = {
         name: guest,
         seatOccupied : i+1,
         tableName: tableName
-
     }
-
     guestsLists.push(newVip)
 
+} 
 
-});
+guests.forEach(createGuestList);
 
 logSomething(guestsLists);
