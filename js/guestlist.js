@@ -22,10 +22,10 @@ const createGuestList = (guest, i) => {
         name: guest,
         seatOccupied : i+1,
         tableName: tableName
-    }
-    guestsLists.push(newVip)
+    };
+    guestsLists.push(newVip);
 
-} 
+};
 
 guests.forEach(createGuestList);
 
