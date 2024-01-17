@@ -20,4 +20,5 @@ const lightestBike = racingBicycles.reduce((lightestWeightBike, currentBike) => 
 }, racingBicycles[0]);
 
 
-console.log(lightestBike)
+console.log(lightestBike);
+
