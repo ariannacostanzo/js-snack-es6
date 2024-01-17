@@ -20,9 +20,19 @@ const footballTeams = [
         fouls: 0 }
   ];
 
+  console.log(footballTeams)
 
 //funzione che mi ritorna un numero random da 1 a max
 const getRandomNumber = max => Math.floor(Math.random() *max) + 1
 
 // inserisco numeri random al posto di goals and fouls
+
+footballTeams.forEach((team) => {
+
+    team.goals = getRandomNumber(20);
+    team.fouls = getRandomNumber(20);
+
+})
+
+console.log(footballTeams)
 
