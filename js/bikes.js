@@ -11,14 +11,11 @@ const racingBicycles = [
 
 //Uso il metodo reduce per partire a controllare dal primo oggetto (racingBycicles[0]), questo sarà il valore iniziale di lightestWeightBike, in questo caso 7.2
 //ad ogni giro lightestWeightBike controllerà se incontro un altro peso che è minore di quello attuale, dopo aver girato per tutti troverò il peso minimo
+
+
 const lightestBike = racingBicycles.reduce((lightestWeightBike, currentBike) => {
-    if (currentBike.weight < lightestWeightBike.weight) {
-        return currentBike;
 
-    } else {
-
-        return lightestWeightBike
-    }
+    return currentBike.weight < lightestWeightBike.weight ? currentBike : lightestWeightBike
     
 }, racingBicycles[0]);
 
