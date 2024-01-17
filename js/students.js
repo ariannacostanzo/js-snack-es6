@@ -1,3 +1,5 @@
+const logSomething = something => console.log(something);
+
 const students = [
     {
         id: 213,
@@ -39,12 +41,27 @@ const students = [
 //creo una lista di studenti che hanno voti superiori a 70
 const gradesAbove70 = students.filter(({grades}) => grades > 70);
 
-// logSomething(gradesAbove70);
+logSomething(gradesAbove70);
 
 const gradesAbove70AndIDAbove120 = gradesAbove70.filter(({id}) => id > 120);
 
-// logSomething(gradesAbove70AndIDAbove120);
+logSomething(gradesAbove70AndIDAbove120);
 
 const studentsNames = students.map(({name}) => name.toUpperCase());
 
-// logSomething(studentsNames);
+logSomething(studentsNames);
+
+    
+    
+//sfida 
+
+const string = `Id|Name|Grades
+213|Marco della Rovere|78
+110|Paola Cortellessa|96
+250|Andrea Mantegna|48
+145|Gaia Borromini|74
+196|Luigi Grimaldello|68
+102|Piero della Francesca|50
+120|Francesca da Polenta|84`
+
+// fare diventare questa stringa in un array di oggetti

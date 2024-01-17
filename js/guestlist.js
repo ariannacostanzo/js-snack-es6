@@ -34,6 +34,7 @@ const createGuestList = (guest, i) => {
 };
 
 
+
 //funzione che mi crea un template da stampare in pagina
 
 
@@ -58,12 +59,10 @@ guests.forEach(createGuestList);
 
 logSomething(guestsLists);
 
-//continuo stampando in pagina
-
-//do al tavolo il suo nome
-
-
 //creo tanti posti quanti gli ospiti
 guestsLists.forEach(createTemplate);
 
-//cambio la posizione degli elementi
+
+// potevo anche farlo con map, mi risparmiavo di creare l'array fuori
+
+// const guestList = guests.map((name, i) => ({tableName, name: name, i, seatOccupied: i + 1}));
